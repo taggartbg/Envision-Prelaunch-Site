@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Didact+Gothic&family=Open+Sans:wght@300&display=swap&family=Libre+Baskerville:wght@700&family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #ece4c4;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #444;
+        margin: 20px;
+        border: 1px solid rgb(255, 255, 255);
+        font-size: 42px;
+      }
+      .title {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 72px;
+      }
+      .subtitle {
+        animation: fadeInOut ease 2s;
+        opacity: 0;
+      }
+      .st-1 {
+        font-family: 'Tenali Ramakrishna', sans-serif;
+        animation-delay: 1s;
+      }
+      .st-2 {
+        font-family: 'Libre Baskerville', serif;
+        animation-delay: 3s;
+      }
+      .st-3 {
+        font-family: 'Alfa Slab One', cursive;
+        animation-delay: 5s;
+      }
+      .stay {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 38px;
+        animation: fadeIn ease 1s;
+        animation-delay: 7s;
+        animation-fill-mode: forwards;
+      }
+      .signup {
+        margin-top: -150px;
+      }
+      form {
+        opacity: 0;
+        animation: fadeIn ease 1s;
+        animation-delay: 8s;
+        animation-fill-mode: forwards;
+        display: flex;
+      }
+      input {
+        border:none;
+        background-image:none;
+        background-color:transparent;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        outline: none;
+
+        padding: 10px 20px;
+        font-size: 30px;
+        font-family: 'Libre Baskerville', serif;
+      }
+      input:focus {
+        outline: lightcyan;
+      }
+      input[type="email"] {
+        background-color: #fff;
+        text-align: center;
+      }
+      input[type="submit"] {
+        background-color: #89d2e7;
+        color: #333;
+      }
+      input[type="submit"]:hover {
+        cursor: pointer;
+        background-color: #29cfff;
+      }
+
+      @media only screen and (max-width: 800px) {
+        form {
+          flex-direction: column;
+          align-items: stretch;
+        }
+      }
+
+      @keyframes fadeInOut {
+        0% { opacity :0; }
+        20% { opacity: 1; }
+        80% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      Envision
+    </div>
+    <div class="subtitle stay">
+      Therapeutics
+    </div>
+    <div class="subtitle st-1">
+      Flying
+    </div>
+    <div class="subtitle st-2">
+      Sobriety
+    </div>
+    <div class="subtitle st-3">
+      Exploration
+    </div>
+    <div class="signup">
+      <form action="">
+        <input type="email" />
+        <input type="submit" value="Keep me updated!" />
+      </form>
+    </div>
+  </body>
+</html>
